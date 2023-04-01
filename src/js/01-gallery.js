@@ -8,6 +8,8 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 const galleryContainer = document.querySelector('.gallery')
 const galleryMarkup = createImgGallery(galleryItems);
 
+galleryContainer.style.listStyleType = 'none';
+
 function createImgGallery (gallery) {
     return gallery.map(({preview, original, description}) => {
         return `
